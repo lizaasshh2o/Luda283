@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Економічна безпека країни — Резюме</title>
+  <meta name="description" content="Мінісайт: резюме, аналіз економічної безпеки країни, загрози та методи протидії."/>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#3ddc97;
+      --muted:#9aa6b2;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:980px;
+      --radius:12px;
+      font-family: Inter, Roboto, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: linear-gradient(180deg,#061226 0%, #081320 50%, #051018 100%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:32px 16px;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:0 auto;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      background:linear-gradient(135deg,var(--accent),#60a5fa);
+      border-radius:10px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:#052018;
+      box-shadow: 0 6px 18px rgba(3,7,12,0.6);
+      font-family: "Segoe UI", Roboto, Arial;
+    }
+    h1{font-size:20px;margin:0}
+    nav{
+      display:flex;
+      gap:8px;
+      align-items:center;
+    }
+    .navlink{
+      color:var(--muted);
+      text-decoration:none;
+      padding:8px 12px;
+      border-radius:8px;
+      transition: all .18s ease;
+      font-weight:600;
+      font-size:14px;
+      background:transparent;
+    }
+    .navlink:hover{ color:#fff; background: rgba(255,255,255,0.03); transform:translateY(-2px)}
+    main{
+      margin-top:20px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:18px;
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+      border:1px solid rgba(255,255,255,0.03);
+      padding:20px;
+      border-radius:10px;
+    }
+    .meta{
+      display:flex;
+      gap:16px;
+      align-items:center;
+    }
+    .contact{color:var(--muted);font-size:14px}
+    section h2{margin:0 0 12px 0;}
+    .two-col{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:12px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      color:#e6eef6;
+      font-size:15px;
+    }
+    th,td{
+      padding:10px 8px;
+      border-bottom:1px solid rgba(255,255,255,0.03);
+      text-align:left;
+      vertical-align:top;
+    }
+    th{color:var(--muted); font-weight:600; font-size:13px}
+    .muted{color:var(--muted)}
+    footer{margin-top:18px; color:var(--muted); font-size:13px; text-align:center}
+    /* Responsive */
+    @media (max-width:700px){
+      .two-col{grid-template-columns:1fr}
+      header{flex-direction:column; align-items:flex-start; gap:12px}
+      .brand{width:100%; justify-content:space-between}
+      nav{width:100%; justify-content:space-between}
+    }
+    /* smooth scroll anchor highlight */
+    :target{outline: 4px solid rgba(61,220,151,0.12); border-radius:8px; padding:12px}
+    .cta{
+      display:inline-block;
+      padding:8px 12px;
+      background:var(--accent);
+      color:#052018;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:700;
+    }
+    .note{font-size:13px; color:var(--muted); margin-top:8px}
+  </style>
+</head>
+<body>
+  <div class="wrap" role="document">
+    <header>
+      <div class="brand" aria-hidden="false">
+        <div class="logo" aria-hidden="true">ЕБ</div>
+        <div>
+          <h1>Мінісайт: Економічна безпека країни</h1>
+          <div class="muted" style="font-size:13px">Резюме • Аналіз • Загрози і протидія</div>
+        </div>
+      </div>
+
+      <nav aria-label="Головне меню">
+        <a class="navlink" href="#resume">Резюме</a>
+        <a class="navlink" href="#security">Економічна безпека країни</a>
+        <a class="navlink" href="#threats">Загрози та протидія</a>
+        <a class="navlink cta" href="#threats" style="background:linear-gradient(90deg,var(--accent),#60a5fa); color:#021214">Деталі</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- РЕЗЮМЕ -->
+      <section id="resume" class="card" aria-labelledby="resume-title">
+        <h2 id="resume-title">Резюме</h2>
+        <div class="meta" style="margin-bottom:12px">
+          <div>
+            <strong style="font-size:16px">Імʼя Прізвище</strong>
+            <div class="muted">Студент(ка), Державний торговельно-економічний університет</div>
+          </div>
+          <div style="margin-left:auto; text-align:right">
+            <div class="contact">your_email@dteu.edu.ua</div>
+            <div class="muted" style="font-size:13px">Київ, Україна</div>
+          </div>
+        </div>
+
+        <div style="display:grid; gap:10px">
+          <div>
+            <strong>Освіта</strong>
+            <p class="muted" style="margin:6px 0 0 0">
+              Державний торговельно-економічний університет — спеціальність: __________. Роки навчання: 20__ – 20__.
+            </p>
+          </div>
+
+          <div>
+            <strong>Досвід</strong>
+            <p class="muted" style="margin:6px 0 0 0">
+              Посада / Місце роботи (якщо є). Участь у студентських проєктах, дослідженнях з економічної безпеки, аналітичні роботи.
+            </p>
+          </div>
+
+          <div class="two-col" style="margin-top:6px">
+            <div>
+              <strong>Навички</strong>
+              <ul class="muted" style="margin:8px 0 0 18px; padding:0">
+                <li>Аналітичне мислення</li>
+                <li>Excel / Google Sheets</li>
+                <li>Базова економічна аналітика</li>
+                <li>Робота з даними</li>
+              </ul>
+            </div>
+
+            <div>
+              <strong>Досягнення</strong>
+              <ul class="muted" style="margin:8px 0 0 18px; padding:0">
+                <li>Участь у студентських конференціях</li>
+                <li>Успішні курсові/лабораторні роботи</li>
+                <li>Практичні дослідження з теми економічної безпеки</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="note">Порада: замініть місця з підкресленням на свої реальні дані перед завантаженням.</p>
+      </section>
+
+      <!-- ЕКОНОМІЧНА БЕЗПЕКА КРАЇНИ -->
+      <section id="security" class="card" aria-labelledby="security-title">
+        <h2 id="security-title">Економічна безпека країни — короткий підсумок</h2>
+
+        <p>
+          Стан економічної безпеки країни залишається напруженим через зовнішні загрози та структурні виклики, але спостерігаються ознаки
+          адаптації й поступової стабілізації. Економіка відновлюється завдяки міжнародній допомозі, державним програмам та гнучкості бізнесу.
+          Інфляція знизилася порівняно з піковими значеннями, ВВП демонструє обережне відновлення. Державний борг зростає під тиском фінансування поточних потреб,
+          а інвестиційний клімат залишається складним через високі ризики. Ключовою залишається спроможність проводити реформи та забезпечувати прозоре управління.
+        </p>
+
+        <div style="margin-top:10px" class="muted">
+          <strong>Ключові показники / тенденції (приклад):</strong>
+          <ul style="margin:8px 0 0 18px; padding:0">
+            <li>Інфляція — зниження з пікових рівнів, але ціни залишаються волатильними.</li>
+            <li>ВВП — ознаки повільного відновлення у секторі послуг та частково промисловості.</li>
+            <li>Державний борг — зростає, потребує уваги щодо структури та обслуговування.</li>
+            <li>Інвестиційний клімат — іноземні інвестиції обмежені ризиками, є програми стимулювання.</li>
+            <li>Енергетична безпека — критична для промисловості та побуту, триває диверсифікація джерел.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- ЗАГРОЗИ ТА ПРОТИДІЯ -->
+      <section id="threats" class="card" aria-labelledby="threats-title">
+        <h2 id="threats-title">Загрози та методи протидії</h2>
+
+        <div class="two-col" style="margin-top:8px">
+          <div>
+            <strong>5 основних загроз</strong>
+            <table aria-describedby="threats-title">
+              <thead>
+                <tr><th style="width:42px">№</th><th>Загроза</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Війна та руйнування інфраструктури</td></tr>
+                <tr><td>2</td><td>Корупція та слабкі інституції</td></tr>
+                <tr><td>3</td><td>Висока інфляція і цінова нестабільність</td></tr>
+                <tr><td>4</td><td>Трудова міграція та демографічні втрати</td></tr>
+                <tr><td>5</td><td>Енергетична залежність та перебої з постачанням</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <strong>5 методів протидії</strong>
+            <table>
+              <thead>
+                <tr><th style="width:42px">№</th><th>Метод</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Зміцнення обороноздатності та відновлення критичної інфраструктури</td></tr>
+                <tr><td>2</td><td>Антикорупційна політика та посилення інституцій</td></tr>
+                <tr><td>3</td><td>Монетарна дисципліна, таргетування інфляції та підтримка платоспроможності</td></tr>
+                <tr><td>4</td><td>Стимулювання зайнятості, програми повернення та перепідготовки працівників</td></tr>
+                <tr><td>5</td><td>Диверсифікація енергетичних джерел та інвестиції в відновлювану енергетику</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p class="note">Можеш змінити предмети в таблицях під свою країну або додати додаткові пункти.</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Мій мінісайт — Економічна безпека. Підготовано для лабораторної роботи.</div>
+    </footer>
+  </div>
+
+  <script>
+    // автоматично поставить рік
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // проста підтримка фокусування по anchor для людей, що використовують клавіатуру
+    window.addEventListener('hashchange', function(){
+      const id = location.hash.slice(1);
+      const el = document.getElementById(id);
+      if(el) el.focus({preventScroll:false});
+    });
+  </script>
+</body>
+</html>
